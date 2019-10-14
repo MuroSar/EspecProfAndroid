@@ -45,6 +45,7 @@ public class LoginActivity extends AppCompatActivity {
         switch (loginOption) {
             case EMAIL_OK: {
                 emailError.setVisibility(View.GONE);
+                generalError.setVisibility(View.GONE);
                 break;
             }
             case EMAIL_ERROR: {
@@ -53,6 +54,7 @@ public class LoginActivity extends AppCompatActivity {
             }
             case PASSWORD_OK: {
                 passwordError.setVisibility(View.GONE);
+                generalError.setVisibility(View.GONE);
                 break;
             }
             case PASSWORD_ERROR: {
