@@ -8,4 +8,71 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools">
 
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Especialización profesional Programación de dispositivos móviles"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+    <EditText
+            android:id="@+id/edit_text_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="100dp" />
+
+    <TextView
+            android:id="@+id/edit_text_login_email_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Se encontró un error en este campo."
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="11dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    <EditText
+            android:id="@+id/edit_text_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp" />
+
+    <TextView
+            android:id="@+id/edit_text_login_password_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Se encontró un error en este campo."
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="11dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    <TextView
+            android:id="@+id/edit_text_login_general_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Email y/o password incorrecto."
+            android:textColor="@android:color/holo_red_dark"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+    <Button
+            android:id="@+id/button_login_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Login" />
+
+    <Button
+            android:id="@+id/button_login_create_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create account" />
+
 </LinearLayout>
