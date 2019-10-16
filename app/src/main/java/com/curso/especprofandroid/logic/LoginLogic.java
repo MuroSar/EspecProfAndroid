@@ -1,6 +1,6 @@
 package com.curso.especprofandroid.logic;
 
-import com.curso.especprofandroid.data.database.RealmDB;
+import com.curso.especprofandroid.data.database.RealmContract;
 import com.curso.especprofandroid.data.element.User;
 import com.curso.especprofandroid.util.LoginOption;
 
@@ -8,6 +8,12 @@ public class LoginLogic {
 
     private boolean isEmailValid = false;
     private boolean isPasswordValid = false;
+
+    private RealmContract realm;
+
+    public LoginLogic(RealmContract realm) {
+        this.realm = realm;
+    }
 
     public LoginOption onEmailTextChange(String email) {
         if (email.isEmpty()) {
@@ -42,7 +48,7 @@ public class LoginLogic {
     }
 
     public LoginOption login(String email, String password) {
-        if (RealmDB.login(new User(email, password))) {
+        if (realm.login(new User(email, password))) {
             return LoginOption.LOGGED_OK;
         } else {
             return LoginOption.LOGGED_ERROR;

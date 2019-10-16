@@ -14,11 +14,11 @@ public class User {
         this.password = password;
     }
 
-    public User(String email, String password, String name, String lastname, String dateOfBirth) {
-        this.email = email;
-        this.password = password;
+    public User(String name, String lastname, String email, String password, String dateOfBirth) {
         this.name = name;
         this.lastname = lastname;
+        this.email = email;
+        this.password = password;
         this.dateOfBirth = dateOfBirth;
     }
 

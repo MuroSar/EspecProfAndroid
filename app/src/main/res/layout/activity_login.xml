@@ -24,7 +24,7 @@
             android:layout_marginTop="100dp" />
 
     <TextView
-            android:id="@+id/edit_text_login_email_error"
+            android:id="@+id/text_login_email_error"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Se encontró un error en este campo."
@@ -42,7 +42,7 @@
             android:layout_marginTop="20dp" />
 
     <TextView
-            android:id="@+id/edit_text_login_password_error"
+            android:id="@+id/text_login_password_error"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Se encontró un error en este campo."
@@ -52,7 +52,7 @@
             android:visibility="gone" />
 
     <TextView
-            android:id="@+id/edit_text_login_general_error"
+            android:id="@+id/text_login_general_error"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
